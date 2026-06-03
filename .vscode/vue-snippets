@@ -1,0 +1,17 @@
+{
+  "vue3快速生成模板": {
+    "prefix": "Vue3.2+",
+    "body": [
+      "<template>",
+      "\t<view>\n",
+      "\t</view>",
+      "</template>\n",
+      "<script setup lang='ts'>\n",
+      "</script>",
+      "<style scoped lang='scss'>\n",
+      "</style>",
+      "$2"
+    ],
+    "description": "vue3快速生成模板"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "12306抢票游戏",
+  "appid": "",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  /* 5+App特有相关 */
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    /* 模块配置 */
+    "modules": {},
+    /* 应用发布信息 */
+    "distribute": {
+      /* android打包配置 */
+      "android": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+        ]
+      },
+      /* ios打包配置 */
+      "ios": {},
+      /* SDK配置 */
+      "sdkConfigs": {}
+    }
+  },
+  /* 快应用特有相关 */
+  "quickapp": {},
+  /* 小程序特有相关 */
+  "mp-weixin": {
+    "appid": "wx2db378085b7d6e59",
+    // "appid": "wx4f84b2fd24d61e61",
+    // "appid": "wx92cc7b534fdd8806",
+    "requiredPrivateInfos": ["getLocation", "chooseLocation"],
+    // 弹窗说明文字
+    "permission": {
+      "scope.userLocation": {
+        "desc": "您的位置信息将用于计算距离及展示附近服务"
+      }
+    },
+    "setting": {
+      "urlCheck": false
+    },
+    "usingComponents": true
+  },
+  "mp-alipay": {
+    "usingComponents": false
+  },
+  "mp-baidu": {
+    "usingComponents": false
+  },
+  "mp-toutiao": {
+    "usingComponents": false
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "h5": {
+    "router": {
+      "mode": "history",
+      "base": "/"
+    }
+  },
+  "vueVersion": "3"
+}
