@@ -44,3 +44,34 @@ export function customNavigateTo(url: string) {
     uni.reLaunch({ url: url });
   }
 }
+
+/**
+ * 将数字转换为汉字（主要用于关卡显示）
+ * @param num 数字
+ * @returns 汉字
+ */
+export function numberToChinese(num: number): string {
+  const chineseNums = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+  if (num <= 10) {
+    return chineseNums[num];
+  } else if (num < 20) {
+    return '十' + chineseNums[num % 10];
+  } else if (num < 100) {
+    const unit = num % 10;
+    const ten = Math.floor(num / 10);
+    return chineseNums[ten] + '十' + (unit === 0 ? '' : chineseNums[unit]);
+  }
+  return num.toString();
+}
+
+//判断设备是ios还是安卓
+export const isIos = () => {
+  const u = navigator.userAgent;
+  return !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+};
+
+//获取图片热点坐标
+export const getCoords = () => {
+  //获取屏幕可视区域宽高
+  // const { width, height } = uni.getSystemInfoSync();
+};

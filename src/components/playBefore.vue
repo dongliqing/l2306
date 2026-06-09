@@ -1,6 +1,6 @@
 <template>
   <view class="absolute z-[99] w-full h-full flex flex-col items-center justify-center bg-[#298ccf]">
-    <view class="flex-1 pt-[100rpx]">
+    <view class="flex-1 pt-[160rpx]">
       <view class="logo-box">
         <image src="@/static/images/pic1.png" mode="scaleToFill" class="w-full h-full relative z-[3]" />
         <view class="ring_1" />

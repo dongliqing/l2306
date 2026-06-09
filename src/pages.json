@@ -3,7 +3,7 @@
     {
       "path": "pages/index/index",
       "style": {
-        // "navigationStyle": "custom",
+        "navigationStyle": "custom",
         "navigationBarTitleText": "抢火车票"
         // "navigationBarBackgroundColor": "#007AFF"
       }
@@ -15,9 +15,15 @@
       }
     },
     {
-      "path": "pages/login/login",
+      "path": "pages/result/result",
       "style": {
-        "navigationBarTitleText": "登录"
+        "navigationBarTitleText": "结束"
+      }
+    },
+    {
+      "path": "pages/way/way",
+      "style": {
+        "navigationBarTitleText": "过关秘籍"
       }
     }
   ],

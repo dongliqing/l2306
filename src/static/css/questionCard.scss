@@ -1,0 +1,452 @@
+.question-card {
+  flex: 1;
+
+  .g_top {
+    background: #298ccf;
+    padding: 10rpx 0 2rpx;
+    .h3 {
+      color: #fff;
+      font-size: 48rpx;
+      font-family: '方正兰亭黑_GBK';
+      height: 60rpx;
+      text-align: center;
+    }
+    .h4 {
+      color: #fff;
+      font: 28rpx '方正兰亭黑_GBK';
+      height: 50rpx;
+      line-height: 50rpx;
+      text-align: center;
+    }
+  }
+
+  .g_ticket {
+    border: 6rpx solid #298ccf;
+    box-sizing: border-box;
+    padding: 0px 0 30rpx 0;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    .h3 {
+      font: 30rpx/64rpx '方正兰亭黑_GBK';
+      height: 64rpx;
+      color: #f91700;
+    }
+  }
+
+  .changeh {
+    animation: height 1s ease-out infinite;
+  }
+
+  .timeout {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 100%;
+    border: 8rpx solid #222;
+    color: #222;
+    z-index: 3;
+    font: 52rpx/140rpx 'FZDHTJW_GB1_0';
+    background: #f9fcfc;
+    position: absolute;
+    bottom: 12rpx;
+    left: 50%;
+    margin-left: -70rpx;
+
+    &.warn {
+      border-color: #f91700;
+      color: #f91700;
+    }
+  }
+}
+
+@keyframes height {
+  0% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(24rpx);
+  }
+  100% {
+    transform: translateY(24rpx);
+  }
+}
+
+.train {
+  animation: train 3s ease-out 2s infinite;
+}
+@keyframes train {
+  0% {
+    transform: translateX(120%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120%);
+    opacity: 1;
+  }
+}
+
+// 第四题动效
+#ques_4_pic_2 {
+  animation: flash21 2s ease infinite;
+}
+@keyframes flash21 {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(100%);
+  }
+  60% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#ques_4_pic_3 {
+  animation: flash22 2s ease infinite;
+}
+@keyframes flash22 {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#ques_4_pic_6 {
+  animation: flash23 2s ease infinite;
+}
+@keyframes flash23 {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(100%);
+  }
+  60% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#ques_4_pic_7 {
+  animation: flash24 2s ease infinite;
+}
+@keyframes flash24 {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*第五题*/
+#ques_5_pic_1 {
+  animation: flash31 6s linear infinite;
+}
+@keyframes flash31 {
+  0% {
+    transform: translate(0);
+  }
+  12.5% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(100%) translateX(325%);
+  }
+  62.5% {
+    transform: translateY(0) translateX(325%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#ques_5_pic_2 {
+  animation: flash32 6s linear infinite;
+}
+@keyframes flash32 {
+  0% {
+    transform: translate(0);
+  }
+  12.5% {
+    transform: translateX(-110%);
+  }
+  25% {
+    transform: translateY(100%) translateX(-110%);
+  }
+  62.5% {
+    transform: translateY(100%) translateX(220%);
+  }
+  75% {
+    transform: translateY(0) translateX(220%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#ques_5_pic_3 {
+  animation: flash33 6s linear infinite;
+}
+@keyframes flash33 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateX(-210%);
+  }
+  37.5% {
+    transform: translateY(100%) translateX(-210%);
+  }
+  75% {
+    transform: translateY(100%) translateX(100%);
+  }
+  87.5% {
+    transform: translateY(0) translateX(110%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#ques_5_pic_4 {
+  animation: flash34 6s linear infinite;
+}
+@keyframes flash34 {
+  0% {
+    transform: translate(0);
+  }
+  37.5% {
+    transform: translateX(-325%);
+  }
+  50% {
+    transform: translateX(-325%) translateY(100%);
+  }
+  87.5% {
+    transform: translateY(100%) translateX(0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#ques_5_pic_5 {
+  animation: flash35 6s linear infinite;
+}
+@keyframes flash35 {
+  0% {
+    transform: translate(0);
+  }
+  37.5% {
+    transform: translateX(325%);
+  }
+  50% {
+    transform: translateX(325%) translateY(-100%);
+  }
+  87.5% {
+    transform: translateY(-100%) translateX(0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#ques_5_pic_6 {
+  animation: flash36 6s linear infinite;
+}
+@keyframes flash36 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateX(210%);
+  }
+  37.5% {
+    transform: translateY(-100%) translateX(210%);
+  }
+  75% {
+    transform: translateY(-100%) translateX(-110%);
+  }
+  87.5% {
+    transform: translateY(0) translateX(-110%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#ques_5_pic_7 {
+  animation: flash37 6s linear infinite;
+}
+@keyframes flash37 {
+  0% {
+    transform: translate(0);
+  }
+  12.5% {
+    transform: translateX(102%);
+  }
+  25% {
+    transform: translateY(-100%) translateX(102%);
+  }
+  62.5% {
+    transform: translateY(-100%) translateX(-220%);
+  }
+  75% {
+    transform: translateY(0) translateX(-220%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#ques_5_pic_8 {
+  animation: flash38 6s linear infinite;
+}
+@keyframes flash38 {
+  0% {
+    transform: translate(0);
+  }
+  12.5% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateX(-325%) translateY(-100%);
+  }
+  62.5% {
+    transform: translateY(0) translateX(-325%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+// 第七题图片轮流显示
+#ques_7_pic_1 {
+  animation: label71 1s ease 2s;
+}
+#ques_7_pic_2 {
+  animation: label71 1s ease 3s;
+}
+#ques_7_pic_3 {
+  animation: label71 1s ease 4s;
+}
+#ques_7_pic_4 {
+  animation: label71 1s ease 5s;
+}
+#ques_7_pic_5 {
+  animation: label71 1s ease 6s;
+}
+#ques_7_pic_6 {
+  animation: label71 1s ease 7s;
+}
+#ques_7_pic_7 {
+  animation: label71 1s ease 8s;
+}
+#ques_7_pic_8 {
+  animation: label71 1s ease 9s;
+}
+@keyframes label71 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*第九题*/
+#ques_9_pic_1 {
+  animation: label91 3s ease 4s forwards;
+}
+#ques_9_pic_2 {
+  animation: label91 3s ease 4s forwards;
+}
+#ques_9_pic_3 {
+  animation: label93 3s ease 4s forwards;
+}
+#ques_9_pic_4 {
+  animation: label93 3s ease 4s forwards;
+}
+@keyframes label91 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(105%);
+  }
+  50% {
+    transform: translateY(105%);
+  }
+  100% {
+    transform: translateY(105%) translateX(217%);
+  }
+}
+@keyframes label93 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(105%);
+  }
+  50% {
+    transform: translateY(105%);
+  }
+  100% {
+    transform: translateY(105%) translateX(-217%);
+  }
+}
+#ques_9_pic_5 {
+  animation: label95 3s ease 4s forwards;
+}
+#ques_9_pic_6 {
+  animation: label95 3s ease 4s forwards;
+}
+#ques_9_pic_7 {
+  animation: label97 3s ease 4s forwards;
+}
+#ques_9_pic_8 {
+  animation: label97 3s ease 4s forwards;
+}
+@keyframes label95 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-105%);
+  }
+  50% {
+    transform: translateY(-105%);
+  }
+  100% {
+    transform: translateY(-105%) translateX(217%);
+  }
+}
+@keyframes label97 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-105%);
+  }
+  50% {
+    transform: translateY(-105%);
+  }
+  100% {
+    transform: translateY(-105%) translateX(-217%);
+  }
+}
