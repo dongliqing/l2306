@@ -1,6 +1,6 @@
 <template>
   <view class="absolute z-[99] w-full h-full flex flex-col items-center justify-center bg-[#298ccf]">
-    <view class="flex-1 pt-[160rpx]">
+    <view class="flex-1 pt-[170rpx]">
       <view class="logo-box">
         <image src="@/static/images/pic1.png" mode="scaleToFill" class="w-full h-full relative z-[3]" />
         <view class="ring_1" />
@@ -69,7 +69,7 @@ const emit = defineEmits(['click']);
   font: 36rpx/80rpx '方正兰亭黑_GBK';
   text-align: center;
   border-radius: 6rpx;
-  margin-top: 90rpx;
+  margin-top: 120rpx;
   background: #fff;
   color: #298ccf;
 }

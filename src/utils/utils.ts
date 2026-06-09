@@ -66,8 +66,11 @@ export function numberToChinese(num: number): string {
 
 //判断设备是ios还是安卓
 export const isIos = () => {
-  const u = navigator.userAgent;
-  return !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+  const deviceInfo = uni.getDeviceInfo();
+  const osName = deviceInfo.osName;
+  return osName === 'ios';
+  // const u = navigator.userAgent;
+  // return !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
 };
 
 //获取图片热点坐标

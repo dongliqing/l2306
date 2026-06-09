@@ -9,12 +9,6 @@
       }
     },
     {
-      "path": "pages/grab/grab",
-      "style": {
-        "navigationBarTitleText": "抢票"
-      }
-    },
-    {
       "path": "pages/result/result",
       "style": {
         "navigationBarTitleText": "结束"
@@ -37,14 +31,6 @@
         "buttons": []
       }
     }
-  },
-  "tabBar": {
-    "color": "#000",
-    "selectedColor": "#000",
-    "backgroundColor": "#FFFFFF",
-    "borderStyle": "black",
-    "height": "0",
-    "list": []
   },
   "easycom": {
     "autoscan": true,

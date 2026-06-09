@@ -86,7 +86,7 @@
 }
 
 // 第四题动效
-#ques_4_pic_2 {
+.ques4_pic_2 {
   animation: flash21 2s ease infinite;
 }
 @keyframes flash21 {
@@ -104,7 +104,7 @@
   }
 }
 
-#ques_4_pic_3 {
+.ques4_pic_3 {
   animation: flash22 2s ease infinite;
 }
 @keyframes flash22 {
@@ -122,7 +122,7 @@
   }
 }
 
-#ques_4_pic_6 {
+.ques4_pic_6 {
   animation: flash23 2s ease infinite;
 }
 @keyframes flash23 {
@@ -140,7 +140,7 @@
   }
 }
 
-#ques_4_pic_7 {
+.ques4_pic_7 {
   animation: flash24 2s ease infinite;
 }
 @keyframes flash24 {
@@ -159,7 +159,7 @@
 }
 
 /*第五题*/
-#ques_5_pic_1 {
+.ques5_pic_1 {
   animation: flash31 6s linear infinite;
 }
 @keyframes flash31 {
@@ -179,7 +179,7 @@
     transform: translate(0);
   }
 }
-#ques_5_pic_2 {
+.ques5_pic_2 {
   animation: flash32 6s linear infinite;
 }
 @keyframes flash32 {
@@ -202,7 +202,7 @@
     transform: translate(0);
   }
 }
-#ques_5_pic_3 {
+.ques5_pic_3 {
   animation: flash33 6s linear infinite;
 }
 @keyframes flash33 {
@@ -225,7 +225,7 @@
     transform: translate(0);
   }
 }
-#ques_5_pic_4 {
+.ques5_pic_4 {
   animation: flash34 6s linear infinite;
 }
 @keyframes flash34 {
@@ -245,7 +245,7 @@
     transform: translate(0);
   }
 }
-#ques_5_pic_5 {
+.ques5_pic_5 {
   animation: flash35 6s linear infinite;
 }
 @keyframes flash35 {
@@ -265,7 +265,7 @@
     transform: translate(0);
   }
 }
-#ques_5_pic_6 {
+.ques5_pic_6 {
   animation: flash36 6s linear infinite;
 }
 @keyframes flash36 {
@@ -288,7 +288,7 @@
     transform: translate(0);
   }
 }
-#ques_5_pic_7 {
+.ques5_pic_7 {
   animation: flash37 6s linear infinite;
 }
 @keyframes flash37 {
@@ -311,7 +311,7 @@
     transform: translate(0);
   }
 }
-#ques_5_pic_8 {
+.ques5_pic_8 {
   animation: flash38 6s linear infinite;
 }
 @keyframes flash38 {
@@ -333,28 +333,28 @@
 }
 
 // 第七题图片轮流显示
-#ques_7_pic_1 {
+.ques7_pic_1 {
   animation: label71 1s ease 2s;
 }
-#ques_7_pic_2 {
+.ques7_pic_2 {
   animation: label71 1s ease 3s;
 }
-#ques_7_pic_3 {
+.ques7_pic_3 {
   animation: label71 1s ease 4s;
 }
-#ques_7_pic_4 {
+.ques7_pic_4 {
   animation: label71 1s ease 5s;
 }
-#ques_7_pic_5 {
+.ques7_pic_5 {
   animation: label71 1s ease 6s;
 }
-#ques_7_pic_6 {
+.ques7_pic_6 {
   animation: label71 1s ease 7s;
 }
-#ques_7_pic_7 {
+.ques7_pic_7 {
   animation: label71 1s ease 8s;
 }
-#ques_7_pic_8 {
+.ques7_pic_8 {
   animation: label71 1s ease 9s;
 }
 @keyframes label71 {
@@ -370,16 +370,16 @@
 }
 
 /*第九题*/
-#ques_9_pic_1 {
+.ques9_pic_1 {
   animation: label91 3s ease 4s forwards;
 }
-#ques_9_pic_2 {
+.ques9_pic_2 {
   animation: label91 3s ease 4s forwards;
 }
-#ques_9_pic_3 {
+.ques9_pic_3 {
   animation: label93 3s ease 4s forwards;
 }
-#ques_9_pic_4 {
+.ques9_pic_4 {
   animation: label93 3s ease 4s forwards;
 }
 @keyframes label91 {
@@ -410,16 +410,16 @@
     transform: translateY(105%) translateX(-217%);
   }
 }
-#ques_9_pic_5 {
+.ques9_pic_5 {
   animation: label95 3s ease 4s forwards;
 }
-#ques_9_pic_6 {
+.ques9_pic_6 {
   animation: label95 3s ease 4s forwards;
 }
-#ques_9_pic_7 {
+.ques9_pic_7 {
   animation: label97 3s ease 4s forwards;
 }
-#ques_9_pic_8 {
+.ques9_pic_8 {
   animation: label97 3s ease 4s forwards;
 }
 @keyframes label95 {

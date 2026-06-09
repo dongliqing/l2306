@@ -1,4 +1,3 @@
-showTip
 <template>
   <view class="home-page flex flex-col relative">
     <PlayBefore @click="handleStart" v-if="!isStart" />
@@ -31,10 +30,6 @@ const handleStart = () => {
   nextTick(() => {
     currentIndex.value = 1;
     changeAudio();
-
-    // setTimeout(() => {
-    //   audioContext.value!.play();
-    // }, 2000);
   });
 };
 

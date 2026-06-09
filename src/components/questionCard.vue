@@ -30,9 +30,9 @@
         <image v-for="(pic, index) in titlePictures" :key="'title' + index" :src="`/static/images/title/${pic}`" mode="heightFix" class="h-[50rpx] ml-[4rpx]" />
       </view>
       <!-- 图片选项 -->
-      <view class="pic-list grid grid-cols-4 gap-[10rpx] mt-[20rpx] pb-[10rpx]">
+      <view class="pic-list grid grid-cols-4 gap-[10rpx] mt-[20rpx] pb-[10rpx]" v-if="currentIndex > 0">
         <template v-if="oriQuestions">
-          <view class="relative" :class="opacityChange" v-for="i in 8" :key="i" @tap="handleCheck(i)" :id="`ques_${currentIndex}_pic_${i}`">
+          <view class="relative" v-for="i in 8" :key="i" @tap="handleCheck(i)" :class="[opacityChange, `ques${currentIndex}_pic_${i}`]">
             <image :src="changePicForCover ? `/static/images/close.png` : `/static/images/${folder}/${i}.jpg`" mode="aspectFill" class="w-full h-[140rpx] block" />
             <view class="absolute inset-0 z-[3] flex items-center justify-center" v-if="currentChecked.includes(i)">
               <image src="../static/images/click.png" mode="aspectFill" class="h-[80rpx] w-[80rpx]" />
@@ -50,11 +50,10 @@
     <!--第2题干扰图片 -->
     <image v-if="currentIndex === 2" src="../static/images/train.png" mode="widthFix" class="w-[90%] absolute left-0 top-[45%] z-[5] train" />
     <!--第3题干扰图片 -->
-    <uni-transition mode-class="fade" :show="currentIndex === 3 && showPhoneTel" :duration="300" class="absolute w-full h-full inset-0 z-[4] bg-white">
+    <uni-transition :mode-class="['fade']" :show="currentIndex === 3 && showPhoneTel" :duration="300" class="absolute w-full h-full inset-0 z-[4] bg-white">
       <view>
         <template v-if="isIos()">
           <image src="../static/images/iphone-tel.jpg" mode="scaleToFill" class="absolute w-full h-full inset-0 z-[5]" />
-          <!-- iPhone接听键热点区域 -->
           <view class="absolute w-[170rpx] h-[170rpx] left-[10%] bottom-[8%] z-[6]" @tap="closePhoneTel" />
           <view class="absolute w-[170rpx] h-[170rpx] right-[10%] bottom-[8%] z-[6]" @tap="emits('next', 'wrong')" />
         </template>
@@ -70,7 +69,7 @@
 </template>
 <script setup lang="ts">
 import { isIos } from '@/utils/utils';
-
+console.log('ios', isIos());
 const props = defineProps({
   currentIndex: {
     type: Number,
